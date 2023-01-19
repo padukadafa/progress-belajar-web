@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  position: sticky;
+  position: -webkit-sticky;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+.logo {
+  text-align: left;
+  width: 335px;
+  margin: auto 10px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  color: #61876e;
+  cursor: default;
+  user-select: none;
+}
+.navigation {
+  padding: 10px 10px;
+  justify-content: flex-end;
+  display: flex;
+  top: 0px;
+  margin: auto 0;
+  width: 100%;
+}
+@media (max-width: 712px) {
+  .navigation {
+    display: none;
+  }
+  .logo {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+}
+.navigation-item {
+  list-style: none;
+  padding: 10px 20px;
+  color: #61876e;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: 0.1s linear;
+}
+
+.navigation-item:hover {
+  color: #3c6255;
+}
+
+.btn-green {
+  background-color: #61876e;
+  color: white;
+  border-radius: 12px;
+  transition: 0.1s linear;
+  border: 2px solid #61876e;
+}
+.btn-green:hover {
+  background-color: white;
+  color: #61876e;
+}
+.company-desc {
+  background-color: #eae7b1;
+  padding: 50px 10px;
+  width: 100%;
+}
+.company-desc-moto {
+  font-weight: bold;
+  max-width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.company-desc-description {
+  color: #252525;
+  width: 80%;
+  max-width: 600px;
+
+  margin: 10px auto;
+  text-align: center;
+}
+.btn-desc {
+  width: fit-content;
+  margin: 20px auto;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.company-trainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.company-trainer-item {
+  margin: 30px 30px;
+  width: 160px;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: 0.1s linear;
+}
+.company-trainer-item:hover {
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.company-trainer-name {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.company-trainer-role {
+  text-align: center;
+}
+.company-trainer-item img {
+  display: block;
+  width: 160px;
+  height: 200px;
+  object-fit: cover;
+}
